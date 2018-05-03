@@ -1,0 +1,6 @@
+（1）动态库 DllTest.dll 放在 src/dll 目录下， 头文件 为main.h 
+导出函数为 int addFunction(int a,int b); 实现 2个数相加并返回和
+使用 jna 时不需要该头文件
+（2）创建 interface 继承 com.sun.jna.Library  这里例子中为 AddInterface.java ，
+里边的方法对应于动态库中导出的函数
+（3） 在 App.java 中 取得动态库路径，加载动态库  生成 addInstance 后调用中的方法
