@@ -1,5 +1,7 @@
-（1）动态库 DllTest.dll 放在 src/dll 目录下， 头文件 为main.h 
+（1）动态库 DllTest.dll 放在 src/dll 目录下， 头文件 为main.h 源文件为main.c 使用 codeblock 进行编译
 导出函数为 int addFunction(int a,int b); 实现 2个数相加并返回和
+              addfunction2   使用指针返回结果
+              findfrend      传递结构体指针
 使用 jna 时不需要该头文件
 （2）创建 interface 继承 com.sun.jna.Library  这里例子中为 AddInterface.java ，
 里边的方法对应于动态库中导出的函数
